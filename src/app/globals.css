@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-slate-950 text-slate-200 antialiased; }
+::selection { @apply bg-sky-500/30; }
+input[type='text'], input[type='url'], input[type='number'], select, textarea {
+  @apply w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-1.5 text-sm text-slate-100 placeholder:text-slate-600 focus:border-sky-500 focus:outline-none;
+}
+input[type='checkbox'] { @apply h-4 w-4 rounded border-slate-600 bg-slate-900 accent-sky-500; }
